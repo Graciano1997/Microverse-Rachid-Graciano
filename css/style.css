@@ -1,0 +1,12 @@
+body{
+    background-image: url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+}
+
+main{
+    opacity: 0.8;
+}
+
+.fundo{
+    background-color: blueviolet;
+    opacity: 0.9;
+}
