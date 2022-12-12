@@ -1,22 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <h1 id="title">Microverse Survey form</h1>
-  <p id="description">The best way to improve your programming skills</p>
-    <form id="survey-form">
-      <input type="text" id="name" placeholder="Enter your name" required>
-      <input type="email" id="email" placeholder="Enter your email" required>
-      <input type="number" id="number" placeholder="Enter your number" min="0" max="50">
-      <select  id="dropdown">
-        <option value="M">M</option>
-        <option value="F">F</option>
-      </select>
-    </form>
-</body>
+<html>
+  <head>
+    <link rel="stylesheet" href="">
+   <head>
+ <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">hank you for taking the time to help us improve the platform</p>
+  <div class="body">
+      <form id="survey-form">
+      <label id="name-label" for="name" >Name:</label>
+      <input id="name" type="text"  placeholder="Enter a name" required><br>
+      <label id="email-label" for="email">Email:</label>
+       <input type="email" id="email" placeholder="Enter a email" required><br>
+       <label id="number-label" for="number">Number:</label> 
+       <input type="number" id="number" min="0" max="100" placeholder="enter a number"><br>
+       <label id="gender">Gender:</label>
+       <select id="dropdown" name="gender">
+         <option value="">...</option>
+         <option value="M">M</option>
+         <option value="F">F</option>
+       </select>
+       <fieldset>
+          <legend>Select your skills</legend>
+          <input type="radio" id="javascript" name="skill" value="javascript" >
+         <label for="javascript">javascript</label>
+         <input type="radio" name="skill" id="html" value="html">
+         <label for="html">html</label>
+       </fieldset>
+       <fieldset>
+         <legend>Select your hobbies</legend>
+         <input type="checkbox" id="musique" name="hobbies" value="musique"><labelfor="musique">musique</label>
+           <input type="checkbox" id="movies" name="hobbies" value="movies"><labelfor="movies">movies</label>
+             <input type="checkbox" id="musique" name="hobbies" value="game"><labelfor="game">Game</label>
+               <input type="checkbox" id="sport" name="hobbies" value="sport"><labelfor="Sport">sport</label>
+       </fieldset><br>
+       <label for="description">Comments</label>
+       <textarea name="comments" id="comment" cols="30" rows="10"></textarea>
+       <button type="submit" id="submit">Submit</button>
+       </form>
+  </div>  
+ </body>
 </html>
